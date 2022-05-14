@@ -1,0 +1,726 @@
+/* css general header, main, footer*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	overflow-x: hidden
+}
+
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+/* Inicio css index */
+/*css logo + titulo*/
+
+.parte-superior {
+	text-align: center;
+}
+
+.parte-superior img {
+	width: 150px;
+	height: 150px;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+h1 {
+	text-align: center;
+	color: rgba(8, 8, 8, 0.781);
+	font-size: 70px;
+	font-family: 'IM Fell English SC', serif;
+}
+
+/* css sector menu navegacion*/
+
+.barra-menu {
+	display: flex;
+	background-color: rgb(236, 234, 149);
+	padding: 10px;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+
+}
+
+nav ul a {
+	text-decoration: none;
+	color: rgb(87, 86, 86);
+	padding: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+nav ul a:hover {
+	background-color: rgba(187, 187, 201, 0.534);
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+/* css sector central*/
+
+.parte-central img {
+	background-image: url("../imagenes/imagenindex.png");
+	width: 100%;
+	height: 300px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.parte-central p {
+	text-align: center;
+	font-family: 'Ubuntu Mono', monospace;
+	font-size: 25px;
+	color: rgb(87, 86, 86);
+	padding: 50px;
+}
+
+/*css sector inferior*/
+
+.pie-pagina {
+	display: flex;
+	background-color: rgb(236, 234, 149);
+	padding: 7px;
+	bottom: 0;
+	width: 100%;
+	justify-content: center;
+	gap: 50px;
+	margin-top: auto;
+}
+
+.pie-pagina img {
+	width: 50px;
+	height: 50px;
+}
+
+.pie-pagina ul li {
+	display: inline-block;
+
+}
+
+.pie-pagina ul li a {
+	text-decoration: none;
+	color: rgb(87, 86, 86);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	justify-content: center;
+	margin: 10px
+}
+
+.pie-pagina ul li :hover {
+	background-color: rgba(187, 187, 201, 0.534);
+}
+
+.pie-pagina p {
+	font-size: small;
+	padding: 5px;
+	color: rgb(8, 0, 53);
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Fin css index */
+
+/* Inicio media querie mobile Index*/
+
+@media (max-width: 576px) {
+
+	.parte-superior {
+		display: block;
+		text-align: center;
+	}
+
+	.parte-superior img {
+		width: 75px;
+		height: 75px;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	h1 {
+		text-align: center;
+		color: rgba(8, 8, 8, 0.781);
+		font-size: 35px;
+		font-family: 'IM Fell English SC', serif;
+	}
+
+
+	.parte-central img {
+		width: 100%;
+		height: auto;
+	}
+
+	.parte-central p {
+		font-size: 15px;
+		padding: 20px;
+	}
+
+
+	.pie-pagina {
+		display: block;
+		margin-top: auto;
+	}
+
+}
+
+/* Fin media querie mobile Index*/
+
+/*Innicio css el Bodegon */
+
+.elbodegon {
+	display: flex;
+	padding: 20px;
+	gap: 20px;
+}
+
+img {
+	width: 40%;
+	height: auto
+}
+
+
+
+h2 {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: rgb(150, 6, 6);
+	font-size: 25px;
+	padding: 16px;
+}
+
+p {
+	text-align: justify;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 20px;
+	padding: 16px;
+}
+
+
+/* Fin css el Bodegon */
+
+/* Inicio media querie mobile el Bodegon*/
+
+
+@media (max-width: 576px) {
+	.elbodegon {
+		display: block;
+		justify-content: center;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	h2 {
+		font-size: 15px;
+	}
+
+	p {
+		font-size: 15px;
+	}
+}
+
+/* Fin media querie mobile el Bodegon*/
+
+
+/*inicio css carta*/
+
+.barra-menu {
+	display: block;
+
+}
+
+.titulo-principal {
+	display: flex;
+	font-size: 30px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	padding: 30px;
+	justify-content: center;
+}
+
+/*Inicio sector layout grid*/
+
+.mainContainer {
+	grid-area: mainContainer;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"card1 card2 card3"
+		"card4 card5 card6"
+		"card7 card8 card9";
+	grid-gap: 50px;
+	padding: 50px;
+}
+
+.card1 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1.7fr 0.3fr;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"img"
+		"title";
+	grid-area: card1;
+	border-radius: 20px;
+	background-color: rgb(219, 215, 215);
+	padding: 15px;
+}
+
+.card2 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1.7fr 0.3fr;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"img"
+		"title";
+	grid-area: card2;
+	border-radius: 20px;
+	background-color: rgb(219, 215, 215);
+	padding: 15px;
+}
+
+.card3 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1.7fr 0.3fr;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"img"
+		"title";
+	grid-area: card3;
+	border-radius: 20px;
+	background-color: rgb(219, 215, 215);
+	padding: 15px;
+}
+
+.card4 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1.7fr 0.3fr;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"img"
+		"title";
+	grid-area: card4;
+	border-radius: 20px;
+	background-color: rgb(219, 215, 215);
+	padding: 15px;
+}
+
+.card5 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1.7fr 0.3fr;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"img"
+		"title";
+	grid-area: card5;
+	border-radius: 20px;
+	background-color: rgb(219, 215, 215);
+	padding: 15px;
+}
+
+.card6 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1.7fr 0.3fr;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"img"
+		"title";
+	grid-area: card6;
+	border-radius: 20px;
+	background-color: rgb(219, 215, 215);
+	padding: 15px;
+}
+
+.card7 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1.7fr 0.3fr;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"img"
+		"title";
+	grid-area: card7;
+	border-radius: 20px;
+	background-color: rgb(219, 215, 215);
+	padding: 15px;
+}
+
+.card8 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1.7fr 0.3fr;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"img"
+		"title";
+	grid-area: card8;
+	border-radius: 20px;
+	background-color: rgb(219, 215, 215);
+	padding: 15px;
+}
+
+.card9 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1.7fr 0.3fr;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"img"
+		"title";
+	grid-area: card9;
+	border-radius: 20px;
+	background-color: rgb(219, 215, 215);
+	padding: 15px;
+
+}
+
+.mainContainer {
+	text-align: center;
+}
+
+.mainContainer img {
+	grid-area: img;
+	width: 80%;
+	height: 80%;
+	border-radius: 10px;
+}
+
+.mainContainer p {
+	grid-area: title;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 20px;
+}
+
+/* Fin sector layout grid*/
+
+
+.pie-pagina {
+	grid-column: pie-pagina;
+	display: flex;
+}
+
+/* Fin css sector Carta */
+
+/* Inicio media querie mobile Carta*/
+
+@media (max-width: 576px) {
+
+	.titulo-principal {
+		display: flex;
+		font-size: 20px;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		padding: 20px;
+		justify-content: left;
+	}
+
+	.mainContainer {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		gap: 16px 0px;
+		grid-auto-flow: row;
+		grid-template-areas:
+			"card1"
+			"card2"
+			"card3"
+			"card4"
+			"card5"
+			"card6"
+			"card7"
+			"card8"
+			"card9";
+		grid-area: mainContainer;
+	}
+
+	.card1 {
+		grid-area: card1;
+	}
+
+	.card2 {
+		grid-area: card2;
+	}
+
+	.card3 {
+		grid-area: card3;
+	}
+
+	.card4 {
+		grid-area: card4;
+	}
+
+	.card5 {
+		grid-area: card5;
+	}
+
+	.card6 {
+		grid-area: card6;
+	}
+
+	.card7 {
+		grid-area: card7;
+	}
+
+	.card8 {
+		grid-area: card8;
+	}
+
+	.card9 {
+		grid-area: card9;
+	}
+
+	.mainContainer p {
+		grid-area: title;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		font-size: 12px;
+	}
+
+	.pie-pagina {
+		display: block;
+	}
+}
+
+/* Fin media querie mobile Carta*/
+
+
+/* Inicio css Reservas */
+
+
+.formulario {
+	display: block;
+	width: 400px;
+	height: auto;
+	padding: 10px;
+	border-radius: 20px;
+	margin: auto;
+	background-color: rgb(197, 192, 192);
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 30px;
+}
+
+
+fieldset {
+	padding: 10px;
+	border: 1px solid cornsilk;
+	border-radius: 5px;
+	margin: 8px 0;
+	background-color: rgb(228, 218, 218);
+}
+
+form label {
+	font-weight: bold;
+	display: block;
+	padding-top: 3px;
+}
+
+select {
+	display: block;
+	margin: 8px 0;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+form div {
+	display: flex;
+}
+
+input {
+	width: 100%;
+	height: 20px;
+	margin-top: 10px;
+	display: block;
+	border-radius: 5px;
+	border: 1px solid cornsilk;
+}
+
+input:hover {
+	cursor: pointer;
+	background-color: rgb(236, 234, 149);
+}
+
+
+textarea {
+	width: 100%;
+	height: auto;
+	border: 1px cornsilk;
+	border-radius: 5px;
+	margin: 8px 0;
+}
+
+
+/* Fin css Reservas */
+
+/* Inicio media querie mobile Reservas*/
+
+@media (max-width: 576px) {
+
+	.formulario {
+		display: inline-block;
+		width: 300px;
+		height: auto;
+		padding: 10px;
+		border-radius: 5px;
+		margin: auto;
+		background-color: rgb(197, 192, 192);
+		font-size: 10px;
+		font-family: Arial, Helvetica, sans-serif;
+		margin: 15px;
+	}
+
+
+	fieldset {
+		padding: 5px;
+		border: 1px solid cornsilk;
+		border-radius: 5px;
+		margin: 4px 0;
+		background-color: rgb(228, 218, 218);
+	}
+
+	form label {
+		font-weight: bold;
+		display: inline-block;
+		padding-top: 3px;
+	}
+
+	select {
+		display: inline-block;
+		margin: 5px 0;
+		border-radius: 5px;
+		font-size: 13px;
+	}
+
+	form div {
+		display: inline-block;
+	}
+
+	input {
+		width: 100%;
+		height: 15px;
+		margin-top: 10px;
+		display: block;
+		border-radius: 5px;
+		border: 1px solid cornsilk;
+	}
+
+	input:hover {
+		cursor: pointer;
+		background-color: rgb(236, 234, 149);
+	}
+
+
+	textarea {
+		width: 100%;
+		height: auto;
+		border: 1px cornsilk;
+		border-radius: 5px;
+		margin: 4px 0;
+	}
+
+}
+
+/* Fin media querie mobile Reservas*/
+
+/* Inicio css Contacto */
+
+.contacto {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding: 30px;
+	gap: 100px;
+}
+
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: rgb(87, 86, 86);
+}
+
+.direccion {
+	width: 200px;
+	text-align: center;
+
+}
+
+.direccion iframe {
+	padding: 15px;
+	border-radius: 10px;
+	margin-top: 10px;
+	background-color: rgba(187, 187, 201, 0.534);
+}
+
+.telefonos {
+	width: 200px;
+	text-align: center;
+}
+
+.mail {
+	width: 200px;
+	text-align: center;
+}
+
+/* Fin css Contacto */
+
+/* Inicio media querie mobile Contacto*/
+
+@media (max-width: 576px) {
+
+	.contacto {
+		display: inline-block;
+		width: 100%;
+		height: auto;
+		padding: 20px;
+	}
+
+	h3 {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		color: rgb(87, 86, 86);
+	}
+
+	.direccion {
+		width: 150px;
+		text-align: left;
+		justify-items: left;
+	}
+
+	.direccion iframe {
+		width: 100px;
+		height: 100px;
+		justify-content: left;
+		background-color: rgba(187, 187, 201, 0.534);
+		border-radius: 5px;
+		padding: 15px;
+		margin-top: 10px;
+	}
+
+
+	.telefonos {
+		width: 150px;
+		text-align: left;
+	}
+
+	.mail {
+		width: 150px;
+		text-align: left;
+	}
+}
+
+/* Finmedia querie mobile Contacto*/
