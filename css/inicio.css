@@ -188,13 +188,23 @@ img {
 	height: auto
 }
 
+.brindis {
+    background-color: #140e16;
+    -webkit-transition: 1s linear;
+    transition: 1,5s linear;
+}
+
+
+.brindis:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);}
 
 
 h2 {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	color: rgb(150, 6, 6);
 	font-size: 25px;
-	padding: 16px;
+	padding: 15px;
 }
 
 p {
