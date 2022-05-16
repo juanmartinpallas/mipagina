@@ -42,14 +42,12 @@ h1 {
 
 /* css sector menu navegacion*/
 
-.barra-menu {
-	display: flex;
-	background-color: rgb(236, 234, 149);
-	padding: 10px;
-	bottom: 0;
-	width: 100%;
-	text-align: center;
 
+.navbar-nav {
+	background-color: rgb(236, 234, 149);
+	width: 100%;
+	justify-content: center;
+	gap: 16px;
 }
 
 nav ul a {
@@ -57,15 +55,11 @@ nav ul a {
 	color: rgb(87, 86, 86);
 	padding: 10px;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px;
+	font-size: 20px;
 }
 
 nav ul a:hover {
 	background-color: rgba(187, 187, 201, 0.534);
-}
-
-nav ul li {
-	display: inline-block;
 }
 
 /* css sector central*/
@@ -189,15 +183,16 @@ img {
 }
 
 .brindis {
-    background-color: #140e16;
-    -webkit-transition: 1s linear;
-    transition: 1,5s linear;
+	background-color: #140e16;
+	-webkit-transition: 1s linear;
+	transition: 1, 5s linear;
 }
 
 
 .brindis:hover {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);}
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
 
 
 h2 {
