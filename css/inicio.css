@@ -63,20 +63,22 @@ nav ul a:hover {
 
 /* css sector central*/
 
-.parte-central img {
-	background-image: url("../imagenes/imagenindex.png");
+/* Carrusel con bootstrap*/
+.carousel-item {
 	width: 100%;
-	height: 300px;
+	height: 400px;
+	background-position: center right;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-size: cover;
 }
+
 
 .parte-central p {
 	text-align: center;
 	font-family: 'Ubuntu Mono', monospace;
 	font-size: 25px;
 	color: rgb(87, 86, 86);
-	padding: 50px;
+	padding: 20px;
 }
 
 /*css sector inferior*/
@@ -84,7 +86,7 @@ nav ul a:hover {
 .pie-pagina {
 	display: flex;
 	background-color: rgb(236, 234, 149);
-	padding: 7px;
+	padding: 10px;
 	bottom: 0;
 	width: 100%;
 	justify-content: center;
@@ -117,7 +119,7 @@ nav ul a:hover {
 
 .pie-pagina p {
 	font-size: small;
-	padding: 5px;
+	padding: 10px;
 	color: rgb(8, 0, 53);
 	font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -305,13 +307,9 @@ h3 {
 		font-size: 30px;
 	}
 
-	.parte-central img {
-		width: 100%;
-		height: auto;
-	}
-
 	.parte-central p {
 		font-size: 40px;
+		padding: 30px;
 	}
 
 	.pie-pagina {
@@ -442,9 +440,13 @@ h3 {
 		font-size: 15px;
 	}
 
+	.carousel-inner {
+		width: 100%;
+		height: 200px;
+	}
+
 	.parte-central p {
-		font-size: 20px;
-		padding: 20px;
+		font-size: 25px;
 	}
 
 	.pie-pagina p {
