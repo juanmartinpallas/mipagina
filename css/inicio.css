@@ -121,6 +121,7 @@ nav ul a:hover {
 /*Innicio css el Bodegon */
 
 .titulo-principal {
+	width: 100%;
 	display: flex;
 	font-size: 30px;
 	font-family: Georgia, 'Times New Roman', Times, serif;
@@ -275,18 +276,41 @@ h3 {
 
 /* Fin css Contacto */
 
-/*transiciones*/
-
-.card img {transition: all 0,5s;}
-
-.card img:hover {transform: scale(1.1);
-cursor: pointer;}
 
 /*animaciones*/
+
+.scale-up-center:hover img {
+	-webkit-animation: scale-up-center .5s linear;
+	animation: scale-up-center .5s linear
+}
 
 .text-blur-out:hover {
 	-webkit-animation: text-blur-out 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530);
 	animation: text-blur-out 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530);
+}
+
+@-webkit-keyframes scale-up-center {
+	0% {
+		-webkit-transform: scale(.5);
+		transform: scale(.5)
+	}
+
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1)
+	}
+}
+
+@keyframes scale-up-center {
+	0% {
+		-webkit-transform: scale(.5);
+		transform: scale(.5)
+	}
+
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1)
+	}
 }
 
 .heartbeat {
@@ -398,7 +422,7 @@ cursor: pointer;}
 }
 
 
- /* Inicio media querie tablet*/
+/* Inicio media querie tablet*/
 
 @media (max-width: 799px)
 
@@ -562,6 +586,8 @@ cursor: pointer;}
 
 	.titulo-principal {
 		font-size: 27px;
+		text-align: center;
+		width: 100%;
 	}
 
 	h2 {
