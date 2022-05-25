@@ -1,0 +1,16 @@
+/*css Carrusel con bootstrap*/
+.carousel-item {
+	width: 100%;
+	height: 400px;
+	background-position: center right;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parte-central p {
+	text-align: center;
+	font-family: 'Ubuntu Mono', monospace;
+	font-size: 25px;
+	color: rgb(53, 51, 51);
+	padding: 20px;
+}
