@@ -1,31 +1,11 @@
-/* css general header, main, footer*/
-* {
-	margin: 0;
-	padding: 0;
-}
-
-body {
-	overflow-x: hidden
-}
-
-
-body {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-}
-
-html {
-	font-size: 62.5%;
-}
-
 /*IMPORTS*/
+@import "./global";
 @import "./variables";
 @import "./header";
 @import "./carrusel";
 @import "./footer";
 
-/*Innicio css el Bodegon */
+/*Inicio css el Bodegon */
 
 .titulo-principal {
 	width: 100%;
