@@ -1,9 +1,30 @@
 /*IMPORTS*/
-@import "./global";
 @import "./variables";
 @import "./header";
 @import "./carrusel";
 @import "./footer";
+
+
+/* css general header, main, footer*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	overflow-x: hidden
+}
+
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+html {
+	font-size: 62.5%;
+}
 
 /*Inicio css el Bodegon */
 
@@ -15,7 +36,6 @@
 	padding: 30px;
 	justify-content: center;
 }
-
 
 .elbodegon {
 	display: flex;
@@ -69,8 +89,6 @@ p {
 
 /* Fin css sector Carta */
 
-
-
 /* Inicio css Reservas */
 
 .formulario {
@@ -119,11 +137,12 @@ input {
 	display: block;
 	border-radius: 5px;
 	border: 1px solid cornsilk;
-}
 
-input:hover {
-	cursor: pointer;
-	background-color: rgb(236, 234, 149);
+	input:hover {
+		cursor: pointer;
+		background-color: rgb(236, 234, 149);
+	
+}
 }
 
 
