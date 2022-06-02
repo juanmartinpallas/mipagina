@@ -3,6 +3,7 @@
 @import "./variables";
 @import "./header";
 @import "./footer";
+@import "./responsive";
 @import "./carrusel";
 
 
@@ -323,15 +324,6 @@ h3 {
 		padding: 30px;
 	}
 
-	.pie-pagina {
-		display: block;
-		text-align: center;
-	}
-
-	.pie-pagina p {
-		text-align: center;
-		font-size: 25px;
-	}
 
 	/* Inicio media querie tablet el Bodegon*/
 
@@ -454,15 +446,6 @@ h3 {
 	.parte-central p {
 		font-size: 25px;
 	}
-
-	.pie-pagina p {
-		font-size: 15px;
-	}
-
-	.pie-pagina ul li a {
-		font-size: 15px;
-	}
-
 	/* Inicio media querie mobile el Bodegon*/
 
 	.elbodegon {
