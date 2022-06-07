@@ -10,10 +10,10 @@
 
 .parte-central p {
 	text-align: center;
-	font-family: 'Ubuntu Mono', monospace;
-	font-size: 25px;
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 35px;
 	color: rgb(53, 51, 51);
-	padding: 20px;
+	padding: 40px;
 }
 
 
@@ -42,36 +42,35 @@
 .elbodegon {
 	display: flex;
 	padding: 20px;
-	gap: 20px;
+	gap: 15px;
 	margin-bottom: 100px;
 }
 
-.elbodegon div {background-color: rgba(163, 163, 116, 0.685);
+.elbodegon div {background-color: rgba(173, 173, 131, 0.835);
 
 	p {
 		text-align: justify;
-		font-family: Georgia, 'Times New Roman', Times, serif;
+		font-family: 'Advent Pro', sans-serif;
+		font-weight: bolder;
 		font-size: 20px;
-		padding: 16px;
-		color: aliceblue;
+		padding: 13px;
+		color: rgb(53, 51, 51);
 	
 	}
 
 }
 .elbodegon img {
-	width: 30%;
+	width: 35%;
 	height: auto;
 }
 
 h2 {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family:'Special Elite', cursive;
 	color: rgb(209, 4, 4);
 	font-size: 25px;
-	padding: 15px;
+	padding: 12px;
 	text-align: center;
 }
-
-
 
 /* Fin css el Bodegon */
 
@@ -208,7 +207,7 @@ textarea {
 	height: 100%;
 }
 
-#contacto .card {padding: 60px;
+#contacto .card {padding: 40px;
 background:none;
 border: none;}
 
@@ -219,14 +218,12 @@ border: none;}
 	text-align: center;
 }
 
-
 #contacto iframe {
 	border-radius: 10px;
 	background-color: rgba(187, 187, 201, 0.534);
 	width: 100%;
 	margin-top: 40px;
 }
-
 
 /* Fin css Contacto */
 
@@ -382,15 +379,11 @@ border: none;}
 
 /* Inicio media querie tablet Index*/
 	{
-	nav ul a {
-		font-size: 40px;
-	}
-
+	
 	.parte-central p {
 		font-size: 40px;
 		padding: 30px;
 	}
-
 
 	/* Inicio media querie tablet el Bodegon*/
 
@@ -409,7 +402,7 @@ border: none;}
 	}
 
 	h2 {
-		font-size: 35px;
+		font-size: 37px;
 		text-align: center;
 		margin-top: 20px;
 	}
@@ -468,7 +461,11 @@ border: none;}
 
 	/* Inicio media querie tablet Contacto*/
 
+	.container-contacto {width: 100%;
+	height: 100%;}
+
 	#contacto .card {padding: 20px};
+
 
 }
 
