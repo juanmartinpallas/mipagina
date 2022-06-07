@@ -6,14 +6,35 @@
 @import "./responsive";
 @import "./carrusel";
 
+/* Inicio css Index */
+
+.parte-central p {
+	text-align: center;
+	font-family: 'Ubuntu Mono', monospace;
+	font-size: 25px;
+	color: rgb(53, 51, 51);
+	padding: 20px;
+}
+
+
+
 
 /*Inicio css el Bodegon */
+
+.container-bodegon{ 
+	background-image: url(../imagenes/fondo.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width:100%;
+	height: 100%;
+}
 
 .titulo-principal {
 	width: 100%;
 	display: flex;
-	font-size: 30px;
-	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 50px;
+	font-family: 'Amatic SC', cursive;
+	color: aliceblue;
 	padding: 30px;
 	justify-content: center;
 }
@@ -22,30 +43,47 @@
 	display: flex;
 	padding: 20px;
 	gap: 20px;
+	margin-bottom: 100px;
 }
 
-img {
-	width: 40%;
-	height: auto
+.elbodegon div {background-color: rgba(163, 163, 116, 0.685);
+
+	p {
+		text-align: justify;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		font-size: 20px;
+		padding: 16px;
+		color: aliceblue;
+	
+	}
+
+}
+.elbodegon img {
+	width: 30%;
+	height: auto;
 }
 
 h2 {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	color: rgb(150, 6, 6);
+	color: rgb(209, 4, 4);
 	font-size: 25px;
 	padding: 15px;
+	text-align: center;
 }
 
-p {
-	text-align: justify;
-	font-family: Georgia, 'Times New Roman', Times, serif;
-	font-size: 20px;
-	padding: 16px;
-}
+
 
 /* Fin css el Bodegon */
 
 /*Inicio sector css Carta - card bootstrap*/
+
+.container-carta{ 
+	background-image: url(../imagenes/fondo.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width:100%;
+}
 
 .row {
 	margin: 20px;
@@ -64,25 +102,48 @@ p {
 }
 
 .card {
-	background-color: rgba(180, 162, 63, 0.521);
-	border-radius: 5px;
+	background-color: rgba(241, 226, 143, 0.267);
+	text-align: center;
 }
+
+.card-body {background-color: rgba(53, 54, 54, 0.712);
+	h2 {font-size: 20px;
+		font-family:'Bangers', cursive;;
+		background-color: rgba(175, 170, 104, 0.74);
+	}
+
+	p {color: aliceblue;}
+
+}
+
+
+
 
 /* Fin css sector Carta */
 
 /* Inicio css Reservas */
 
+.container-reservas{ 
+	background-image: url(../imagenes/fondo-reservas.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width:100%;
+	height: 100%;
+}
+
+
+
 .formulario {
 	display: block;
-	width: 500px;
+	width: 600px;
 	height: auto;
 	padding: 10px;
-	border-radius: 20px;
+	border-radius: 10px;
 	margin: auto;
-	background-color: rgb(197, 192, 192);
+	background-color: $nav-color;
 	font-size: 15px;
 	font-family: Arial, Helvetica, sans-serif;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 
@@ -91,7 +152,7 @@ fieldset {
 	border: 1px solid cornsilk;
 	border-radius: 5px;
 	margin: 8px 0;
-	background-color: rgb(228, 218, 218);
+	background-color: rgba(209, 197, 131, 0.849);
 }
 
 form label {
@@ -139,27 +200,33 @@ textarea {
 
 /* Inicio css Contacto */
 
-.contacto {
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	padding: 30px;
-	gap: 100px;
+.container-contacto{ 
+	background-image: url(../imagenes/fondo.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width:100%;
+	height: 100%;
 }
 
-h3 {
+#contacto .card {padding: 60px;
+background:none;
+border: none;}
+
+#contacto h3 {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15px;
-	color: rgb(87, 86, 86);
+	color: rgb(243, 239, 239);
+	text-align: center;
 }
 
 
-.direccion iframe {
-	padding: 15px;
+#contacto iframe {
 	border-radius: 10px;
-	margin-top: 10px;
 	background-color: rgba(187, 187, 201, 0.534);
+	width: 100%;
+	margin-top: 40px;
 }
+
 
 /* Fin css Contacto */
 
@@ -316,7 +383,7 @@ h3 {
 /* Inicio media querie tablet Index*/
 	{
 	nav ul a {
-		font-size: 30px;
+		font-size: 40px;
 	}
 
 	.parte-central p {
@@ -332,13 +399,13 @@ h3 {
 		justify-content: center;
 	}
 
-	img {
+	.elbodegon img {
 		width: 100%;
 		height: auto;
 	}
 
 	.titulo-principal {
-		font-size: 40px;
+		font-size: 70px;
 	}
 
 	h2 {
@@ -349,7 +416,7 @@ h3 {
 
 	p {
 		margin-top: 5px;
-		font-size: 30px;
+		font-size: 35px;
 	}
 
 	/* Inicio media querie tablet Carta*/
@@ -401,24 +468,8 @@ h3 {
 
 	/* Inicio media querie tablet Contacto*/
 
-	.contacto {
-		display: block;
-	}
+	#contacto .card {padding: 20px};
 
-	.contacto h2 {
-		font-size: 40px;
-		text-align: left;
-	}
-
-	.contacto h3 {
-		font-size: 30px;
-		text-align: left;
-	}
-
-	.direccion iframe {
-		width: 150px;
-		height: 150px;
-	}
 }
 
 /* Fin media querie tablet*/
@@ -430,8 +481,13 @@ h3 {
 
 /* Inicio media querie mobile Index*/
 	{
-	.navbar h1 {
-		font-size: 35px;
+		header .logo {  width: 80px;
+			height: 80px;
+			border-radius: 100%;}
+
+
+	header .navbar h1 {
+		font-size: 30px;
 	}
 
 	.navbar ul a {
@@ -453,8 +509,11 @@ h3 {
 		justify-content: center;
 	}
 
+	.elbodegon img {width: 100%;
+	height: auto;}
+
 	.titulo-principal {
-		font-size: 27px;
+		font-size: 40px;
 		text-align: center;
 		width: 100%;
 	}
@@ -514,18 +573,10 @@ h3 {
 
 	/* Inicio media querie mobile Contacto*/
 
-	.contacto h2 {
-		font-size: 20px;
-	}
+	
+	#contacto .card {padding: 15px};
 
-	.contacto h3 {
-		font-size: 15px;
-	}
-
-	.direccion iframe {
-		width: 100px;
-		height: 100px;
-	}
+	#contacto h3 {font-size: 18px;}
 
 	/* Fin media querie mobile*/
 }
