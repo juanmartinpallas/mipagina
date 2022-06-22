@@ -1,6 +1,7 @@
 /* css barra nav bootstrap*/
 
 header {
+    
     .logo {
         width: 100px;
         height: 100px;
@@ -9,23 +10,27 @@ header {
 
     .navbar {
         background-color: $nav-color  !important;
+        
     }
 
     h1 {
         text-align: center;
-        color: rgb(53, 51, 51);
-        font-size: 70px;
+        color: rgb(240, 231, 135);
+        font-size: 60px;
         font-family: 'IM Fell English SC', serif;
     }
 
     nav ul a {
-
+        color: white !important;
+        margin: 6px;
         text-decoration: none;
         font-family: 'IM Fell English SC';
         font-size: 20px;
 
+
         &:hover {
-            background-color: $hover-color;
+            border-bottom: 1px solid;
+            box-shadow: inset 0 -1px rgb(240, 231, 135);
         }
     }
 }

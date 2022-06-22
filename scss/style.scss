@@ -17,24 +17,14 @@
 }
 
 
-
-
 /*Inicio css el Bodegon */
-
-.container-bodegon{ 
-	background-image: url(../imagenes/fondo.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	width:100%;
-	height: 100%;
-}
 
 .titulo-principal {
 	width: 100%;
 	display: flex;
 	font-size: 50px;
 	font-family: 'Amatic SC', cursive;
-	color: aliceblue;
+	color: $titulos-color;
 	padding: 30px;
 	justify-content: center;
 }
@@ -46,7 +36,8 @@
 	margin-bottom: 100px;
 }
 
-.elbodegon div {background-color: rgba(173, 173, 131, 0.835);
+.elbodegon div {
+	background-color: rgba(248, 242, 120, 0.95);
 
 	p {
 		text-align: justify;
@@ -55,17 +46,18 @@
 		font-size: 20px;
 		padding: 13px;
 		color: rgb(53, 51, 51);
-	
+
 	}
 
 }
+
 .elbodegon img {
 	width: 35%;
 	height: auto;
 }
 
 h2 {
-	font-family:'Special Elite', cursive;
+	font-family: 'Special Elite', cursive;
 	color: rgb(4, 4, 4);
 	font-size: 25px;
 	padding: 12px;
@@ -75,14 +67,6 @@ h2 {
 /* Fin css el Bodegon */
 
 /*Inicio sector css Carta - card bootstrap*/
-
-.container-carta{ 
-	background-image: url(../imagenes/fondo.jpg);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	width:100%;
-}
 
 .row {
 	margin: 20px;
@@ -101,36 +85,29 @@ h2 {
 }
 
 .card {
-	background-color: rgba(241, 226, 143, 0.267);
 	text-align: center;
+	background-color: $nav-color;
+	border: none;
 }
 
-.card-body {background-color: rgba(53, 54, 54, 0.712);
-	h2 {font-size: 20px;
-		font-family:'Bangers', cursive;;
-		background-color: rgba(175, 170, 104, 0.74);
+.card-body {
+	background-color: rgba(248, 242, 120, 0.95);
+
+	h2 {
+		font-size: 20px;
+		font-family: 'Bangers', cursive;
+		background-color: white;
 	}
 
-	p {color: aliceblue;}
+	p {
+		color: $nav-color;
+	}
 
 }
-
-
-
 
 /* Fin css sector Carta */
 
 /* Inicio css Reservas */
-
-.container-reservas{ 
-	background-image: url(../imagenes/fondo-reservas.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	width:100%;
-	height: 100%;
-}
-
-
 
 .formulario {
 	display: block;
@@ -151,7 +128,7 @@ fieldset {
 	border: 1px solid cornsilk;
 	border-radius: 5px;
 	margin: 8px 0;
-	background-color: rgba(209, 197, 131, 0.849);
+	background-color: rgba(248, 242, 120, 0.95);
 }
 
 form label {
@@ -186,7 +163,6 @@ input {
 	}
 }
 
-
 textarea {
 	width: 100%;
 	height: auto;
@@ -199,30 +175,32 @@ textarea {
 
 /* Inicio css Contacto */
 
-.container-contacto{ 
-	background-image: url(../imagenes/fondo.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	width:100%;
-	height: 100%;
+#contacto .card {
+	padding: 25px;
+	background: none;
+	border: none;
 }
 
-#contacto .card {padding: 40px;
-background:none;
-border: none;}
-
 #contacto h3 {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
 	font-size: 15px;
-	color: rgb(243, 239, 239);
+	margin-top: 15px;
+	color: rgb(41, 39, 39);
 	text-align: center;
 }
 
 #contacto iframe {
 	border-radius: 10px;
-	background-color: rgba(187, 187, 201, 0.534);
-	width: 100%;
-	margin-top: 40px;
+	width: 45%;
+	height: 35%;
+	margin-top: 25px;
+}
+
+#contacto img {
+	width: 45%;
+	height: 35%;
+	border-radius: 10px;
+	margin-top: 25px;
 }
 
 /* Fin css Contacto */
@@ -379,9 +357,11 @@ border: none;}
 
 /* Inicio media querie tablet Index*/
 	{
-		header .logo {  width: 80px;
-			height: 80px;
-			border-radius: 100%;}
+	header .logo {
+		width: 80px;
+		height: 80px;
+		border-radius: 100%;
+	}
 
 
 	header .navbar h1 {
@@ -389,7 +369,9 @@ border: none;}
 		margin-right: 30px;
 	}
 
- .navbar ul li {padding: 4px;}
+	.navbar ul li {
+		padding: 4px;
+	}
 
 	.parte-central p {
 		font-size: 40px;
@@ -472,12 +454,16 @@ border: none;}
 
 	/* Inicio media querie tablet Contacto*/
 
-	.container-contacto {width: 100%;
-	height: 100%;}
+	.container-contacto {
+		width: 100%;
+		height: 100%;
+	}
 
-	#contacto .card {padding: 20px};
+	#contacto .card {
+		padding: 20px
+	}
 
-
+	;
 }
 
 /* Fin media querie tablet*/
@@ -489,9 +475,11 @@ border: none;}
 
 /* Inicio media querie mobile Index*/
 	{
-		header .logo {  width: 60px;
-			height: 60px;
-			border-radius: 100%;}
+	header .logo {
+		width: 60px;
+		height: 60px;
+		border-radius: 100%;
+	}
 
 
 	header .navbar h1 {
@@ -510,6 +498,7 @@ border: none;}
 	.parte-central p {
 		font-size: 25px;
 	}
+
 	/* Inicio media querie mobile el Bodegon*/
 
 	.elbodegon {
@@ -517,8 +506,10 @@ border: none;}
 		justify-content: center;
 	}
 
-	.elbodegon img {width: 100%;
-	height: auto;}
+	.elbodegon img {
+		width: 100%;
+		height: auto;
+	}
 
 	.titulo-principal {
 		font-size: 40px;
@@ -581,10 +572,16 @@ border: none;}
 
 	/* Inicio media querie mobile Contacto*/
 
-	
-	#contacto .card {padding: 15px};
 
-	#contacto h3 {font-size: 18px;}
+	#contacto .card {
+		padding: 15px
+	}
+
+	;
+
+	#contacto h3 {
+		font-size: 18px;
+	}
 
 	/* Fin media querie mobile*/
 }
