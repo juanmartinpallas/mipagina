@@ -2,4 +2,4 @@
 
 Estoy desarrollando un Sito Web referido a un Bodegon Español, en el que se sirven comidadas tipicas. Para ello realizo la maquetacion con html y doy estilos con CSS que son generados por SCSS, ademas utilizo librerias como Bootstrap para agregar productos e imagenes.
 
-Mi pagina se encuentra en desarrollo! falta poco para terminar!
+
