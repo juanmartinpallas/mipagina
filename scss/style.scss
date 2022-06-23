@@ -13,7 +13,8 @@
 	font-family: 'Pathway Gothic One', sans-serif;
 	font-size: 35px;
 	color: rgb(53, 51, 51);
-	padding: 40px;
+	padding: 60px;
+	margin-bottom: 70px;
 }
 
 
@@ -119,9 +120,8 @@ h2 {
 	background-color: $nav-color;
 	font-size: 15px;
 	font-family: Arial, Helvetica, sans-serif;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
-
 
 fieldset {
 	padding: 10px;
@@ -129,6 +129,7 @@ fieldset {
 	border-radius: 5px;
 	margin: 8px 0;
 	background-color: rgba(248, 242, 120, 0.95);
+
 }
 
 form label {
@@ -136,6 +137,7 @@ form label {
 	display: block;
 	padding-top: 3px;
 }
+
 
 select {
 	display: block;
@@ -151,24 +153,31 @@ form div {
 input {
 	width: 100%;
 	height: 20px;
-	margin-top: 10px;
+	padding: 12px;
+	margin-top: 8px;
 	display: block;
 	border-radius: 5px;
 	border: 1px solid cornsilk;
 
 	&:hover {
 		cursor: pointer;
-		background-color: rgb(236, 234, 149);
+		background-color: $hover-color;
 
 	}
 }
+
+.option {color: rgb(236, 234, 149);}
+
+.reset  {padding: 0px;}
+.submit {padding: 0px;}
 
 textarea {
 	width: 100%;
 	height: auto;
 	border: 1px cornsilk;
 	border-radius: 5px;
-	margin: 8px 0;
+	margin: 6px 0;
+	
 }
 
 /* Fin css Reservas */
@@ -375,7 +384,7 @@ textarea {
 
 	.parte-central p {
 		font-size: 40px;
-		padding: 30px;
+		padding: 40px;
 	}
 
 	/* Inicio media querie tablet el Bodegon*/
@@ -425,7 +434,7 @@ textarea {
 	}
 
 	fieldset {
-		font-size: 30px;
+		font-size: 25px;
 	}
 
 	form label {
@@ -433,7 +442,7 @@ textarea {
 	}
 
 	select {
-		font-size: 30px;
+		font-size: 25px;
 	}
 
 	form div {
@@ -445,11 +454,11 @@ textarea {
 		height: 40px;
 		margin-top: 10px;
 		display: block;
-		font-size: 30px;
+		font-size: 25px;
 	}
 
 	textarea {
-		font-size: 30px;
+		font-size: 25px;
 	}
 
 	/* Inicio media querie tablet Contacto*/
@@ -497,6 +506,7 @@ textarea {
 
 	.parte-central p {
 		font-size: 25px;
+		margin-bottom: 160px;
 	}
 
 	/* Inicio media querie mobile el Bodegon*/
@@ -560,8 +570,8 @@ textarea {
 
 	input {
 		width: 100%;
-		height: 20px;
-		display: block;
+		height: 30px;
+		display: inline-block;
 		border-radius: 5px;
 		font-size: 15px;
 	}
@@ -574,10 +584,8 @@ textarea {
 
 
 	#contacto .card {
-		padding: 15px
+		padding: 15px;
 	}
-
-	;
 
 	#contacto h3 {
 		font-size: 18px;
